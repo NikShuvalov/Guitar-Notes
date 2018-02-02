@@ -175,11 +175,7 @@
             var point = size * randomPoint;
             
             pressedCircle = new Path.Circle(point,200);
-            if(event.character === "a"){
-                pressedCircle.fillColor = "black";
-            }else{
-                pressedCircle.fillColor= new Color(1, randomPoint.x, randomPoint.y);
-            }
+            pressedCircle.fillColor= new Color(1, randomPoint.x, randomPoint.y);
             circles.push(pressedCircle);
             notation.bringToFront();
         }
